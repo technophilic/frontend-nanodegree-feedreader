@@ -4,7 +4,13 @@ Repository containing resources for the feed reader project of udacity frontend 
 ## Opening the application:
 Open ```index.html``` to launch the application.
 
-The application is hosted in gh-pages [here](https://technophilic.github.io/frontend-nanodegree-feedreader/)
+**Alternatively ,**
+
+* Clone the Repository
+* Install [node](https://nodejs.org/en/) ,npm ,[simplehttpserver](https://www.npmjs.com/package/simplehttpserver)
+* Start the server in the project root by Opening a terminal and typing ```simplehttpserver```
+* Access the project at ```localhost:8000```
+
 
 ## Reference :
 * Jasmine [documentation](https://jasmine.github.io/2.1/introduction.html)
