@@ -93,7 +93,7 @@ $(function () {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         it('should grab initial entries', function (done) {
-            expect($('.feed').children().length).not.toBe(0);
+            expect($('.feed .entry').length).not.toBeLessThan(1); //not to be less than 1 implies greater than or equal to 1
             done();
         });
     });
