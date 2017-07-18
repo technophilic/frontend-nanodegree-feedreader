@@ -86,10 +86,6 @@ $(function () {
                 done();
             });
         });
-        afterEach(function (done) {
-            feedStatus = false;
-            done();
-        });
         /* A test that ensures when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
@@ -97,7 +93,7 @@ $(function () {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         it('should grab initial entries', function (done) {
-            expect(feedStatus).toBe(true);
+            expect($('.feed').children().length).not.toBe(0);
             done();
         });
     });
